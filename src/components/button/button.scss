@@ -1,0 +1,13 @@
+@use '../../styles/constant' as var;
+.button {
+    background-color: var.$accent-color;
+    color: white;
+    border-radius: 8px;
+    padding: 13px;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,13 @@
+.container {
+    min-height: 100vh;
+    background: no-repeat url(../../assets/img/LoginBackground.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    // font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.auth-form {
+    max-width: 359px;
+    margin: 0 auto;
+}
