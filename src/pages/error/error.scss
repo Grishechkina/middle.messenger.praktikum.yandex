@@ -1,0 +1,31 @@
+@use '../../styles/constant' as var;
+
+.error-page {
+    min-height: 100vh;
+    background: no-repeat url(../../assets/img/errorBackground.jpeg);
+    background-size: cover;
+    display: flex;
+    font-family: Caveat, Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    &__title {
+        margin: 0;
+        color: var.$accent-color;
+        font-size: 128px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        color: var.$accent-color;
+        font-size: 25px;
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 22px;
+        margin-top: 15px;
+    }
+}

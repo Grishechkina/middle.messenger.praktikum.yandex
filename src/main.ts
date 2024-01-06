@@ -30,6 +30,12 @@ const pages = {
 		formTitle: 'Привет, незнакомец',
 		navigateTo: 'login',
 	}],
+	error: [Pages.ErrorPage, {
+		title: '500',
+		subtitle: '(Райан уже выехал на разборки)',
+		linkTitle: 'Назад к чатам',
+		navigateTo: 'registration'
+	}]
 };
 
 Object.entries(Components).forEach(([name, component]) => {
