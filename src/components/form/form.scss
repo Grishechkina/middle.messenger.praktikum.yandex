@@ -1,0 +1,46 @@
+@use '../../styles/constant' as var;
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 330px;
+
+	&__field {
+		display: grid;
+		grid-template-rows: 21px 27px;
+		color: #FFFFFF;
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+
+	&__input {
+		border: 0;
+		border-bottom: 1px solid var.$light-blue;
+		font-size: 18px;
+		outline: none;
+		background-color: transparent;
+		color: #FFFFFF;
+	}
+
+	&__input-error {
+		color: red;
+		display: block;
+		font-size: 14px;
+		line-height: 12px;
+		margin-top: 8px;
+	}
+
+	&__btns {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__link {
+        color: var.$accent-color;
+        font-size: 17px;
+        margin-top: 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+}

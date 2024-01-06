@@ -16,6 +16,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/ban-ts-comment": "off"
+        "@typescript-eslint/ban-ts-comment": "off",
+        "indent": ["error", "tab"],
+        "quotes": [2, "single", { "avoidEscape": true }]
     }
 }

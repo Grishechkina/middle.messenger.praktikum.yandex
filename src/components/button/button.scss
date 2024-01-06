@@ -1,10 +1,12 @@
 @use '../../styles/constant' as var;
+
 .button {
     background-color: var.$accent-color;
     color: white;
     border-radius: 8px;
     padding: 13px;
     border: none;
+    letter-spacing: 0.04em;
 
     &:hover {
         cursor: pointer;

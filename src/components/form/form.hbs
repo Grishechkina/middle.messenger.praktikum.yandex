@@ -1,0 +1,12 @@
+<form class="form">
+    <div class="form__fields-container">
+        {{#each fields}}
+            {{> Input labelText=labelText type=type name=name}}
+        {{/each}}
+    </div>
+
+    <div class="form__btns">
+        {{> Button label=submitTitle type="button"}}
+        <a class="form__link" href={{navigateTo}} navigateTo={{navigateTo}}>{{linkTitle}}</a>
+    </div>
+</form>
