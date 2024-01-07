@@ -1,4 +1,4 @@
-@use '../../styles/constant' as var;
+@use '../../styles/common' as var;
 
 .form {
 	display: flex;
@@ -41,6 +41,5 @@
         font-size: 17px;
         margin-top: 16px;
         text-align: center;
-        text-decoration: none;
     }
 }

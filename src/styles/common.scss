@@ -6,8 +6,20 @@ $blue: #08458C;
 $light-green: #67C0A7;
 $light-blue: #2D81AC;
 $black: #01010B;
+$grey: #999999;
 $form-background-color: rgba(1, 1, 11, .9);
+$gradient: linear-gradient($dark-green, $blue);
 
 .link {
     text-decoration: none;
+}
+
+.avatar {
+    border-radius: 100px;
+    width: 47px;
+    height: 47px;
+}
+
+.btn {
+    cursor: pointer;
 }

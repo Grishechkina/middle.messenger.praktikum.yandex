@@ -1,0 +1,66 @@
+@use '../../styles/common' as var;
+
+.message {
+    padding: 15px;
+    max-width: 402px;
+    display: flex;
+    position: relative;
+    &__text {
+        margin: 0;
+    }
+
+    &__time-not-my {
+        color: var.$grey;
+        margin: 0;
+        display: flex;
+        align-items: end;
+        margin-left: 5px;
+
+        &_read {
+            background: url(../../assets/img/timeReadNotMy.png);
+            width: 10px;
+            height: 10px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__time-my {
+        color: var.$light-green;
+        margin: 0;
+        display: flex;
+        align-items: end;
+        margin-left: 5px;
+        &_read {
+            background: url(../../assets/img/timeReadMy.png);
+            width: 10px;
+            height: 10px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    
+
+    &_not-my {
+        align-self: flex-start;
+        border-radius: 0 20px 20px 20px;
+        background-color: var.$dark-blue;
+    }
+
+    &_my {
+        align-self: flex-end;
+        border-radius: 20px 20px 0px 20px;
+        background-color: var.$dark-blue;
+    }
+
+    &_img {
+        max-width: 402px;
+    }
+
+    &__time-img {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 5px;
+        background-color: var.$black;
+    }
+}

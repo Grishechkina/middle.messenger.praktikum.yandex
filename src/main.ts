@@ -35,7 +35,11 @@ const pages = {
 		subtitle: '(Райан уже выехал на разборки)',
 		linkTitle: 'Назад к чатам',
 		navigateTo: 'registration'
-	}]
+	}],
+	chats: [Pages.ChatsPage],
+	// profile: [Pages.Profile],
+	// profileChangeData: [Pages.Profile],
+	// profileChangePassword: [Pages.Profile],
 };
 
 Object.entries(Components).forEach(([name, component]) => {
@@ -49,7 +53,7 @@ function navigate(page: string) {
 	container.innerHTML = Handlebars.compile(source)(context);
 }
 
-document.addEventListener('DOMContentLoaded', () => navigate('login'));
+document.addEventListener('DOMContentLoaded', () => navigate('chats'));
 
 document.addEventListener('click', (e) => {
 	// @ts-ignore
