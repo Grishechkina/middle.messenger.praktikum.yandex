@@ -49,7 +49,7 @@ const pages = {
 			{ labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside' },
 			{ labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван' },
 			{ labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг' },
-			{ labelText: 'Имя в чате', type: 'text', name: 'nickname', value: 'DeadOutside' },
+			{ labelText: 'Имя в чате', type: 'text', name: 'display_name', value: 'DeadOutside' },
 			{ labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66' },
 		],
 		disabled: true
@@ -60,7 +60,7 @@ const pages = {
 			{ labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside' },
 			{ labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван' },
 			{ labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг' },
-			{ labelText: 'Имя в чате', type: 'text', name: 'nickname', value: 'DeadOutside' },
+			{ labelText: 'Имя в чате', type: 'text', name: 'display_name', value: 'DeadOutside' },
 			{ labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66' },
 		],
 		submitTitle: 'Сохранить',
