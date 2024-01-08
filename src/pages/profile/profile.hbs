@@ -9,18 +9,15 @@
         </p>
         {{> SettingForm}}
         {{#if disabled}}
-        <div class="profile-page__btns">
-            <span class="profile-page__horizont-line">
-                <button class="profile-page__btn btn" navigateTo="profileChangeData">Изменить данные</button>
-            </span>
-            <span class="profile-page__horizont-line">
-                <button class="profile-page__btn btn" navigateTo="profileChangePassword">Изменить пароль</button>
-            </span>
-            <a href="#" navigateTo="login" class="link profile-page__link">Выйти</a>
-        </div>
+            <div class="profile-page__btns">
+                <span class="profile-page__horizont-line">
+                    <button class="profile-page__btn btn" navigateTo="profileChangeData">Изменить данные</button>
+                </span>
+                <span class="profile-page__horizont-line">
+                    <button class="profile-page__btn btn" navigateTo="profileChangePassword">Изменить пароль</button>
+                </span>
+                <a href="#" navigateTo="login" class="link profile-page__link">Выйти</a>
+            </div>
         {{/if}}
-
     </div>
-
-
 </div>
