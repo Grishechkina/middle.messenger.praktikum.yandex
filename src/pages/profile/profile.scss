@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .profile-page {
     background: var.$gradient;
@@ -39,7 +39,6 @@
         margin-top: 60px;
         gap: 10px;
         align-items: flex-start;
-
     }
 
     &__btn {

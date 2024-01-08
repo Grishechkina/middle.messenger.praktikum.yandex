@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .chat {
     width: 100%;
@@ -12,7 +12,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
     &__body {
         overflow-y: auto;

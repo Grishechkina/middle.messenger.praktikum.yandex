@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .login-page {
     min-height: 100vh;
@@ -21,19 +21,19 @@
     box-shadow: 0 0 5px 10px var.$form-background-color;
 
     &__title {
-    color: var.$accent-color;
-    margin: 0 0 16px;
-    padding-top: 20px;
-    text-align: center;
-}
+        color: var.$accent-color;
+        margin: 0 0 16px;
+        padding-top: 20px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 700px) {
-	.login-page {
-		padding-left: 0;
-	}
+    .login-page {
+        padding-left: 0;
+    }
 
-	.login-form {
-		max-width: 100%;
-	}
+    .login-form {
+        max-width: 100%;
+    }
 }

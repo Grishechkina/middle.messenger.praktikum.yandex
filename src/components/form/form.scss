@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .form {
 	display: flex;
@@ -9,7 +9,7 @@
 	&__field {
 		display: grid;
 		grid-template-rows: 21px 27px;
-		color: #FFFFFF;
+		color: #ffffff;
 		font-size: 15px;
 		margin-bottom: 25px;
 	}
@@ -20,7 +20,7 @@
 		font-size: 18px;
 		outline: none;
 		background-color: transparent;
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 
 	&__input-error {
@@ -37,9 +37,9 @@
 	}
 
 	&__link {
-        color: var.$accent-color;
-        font-size: 17px;
-        margin-top: 16px;
-        text-align: center;
-    }
+		color: var.$accent-color;
+		font-size: 17px;
+		margin-top: 16px;
+		text-align: center;
+	}
 }

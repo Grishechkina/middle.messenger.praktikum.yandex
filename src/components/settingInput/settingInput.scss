@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .setting-input {
     border-bottom: 1px solid var.$light-blue;
@@ -9,13 +9,13 @@
     color: var.$grey;
 
     &__input {
-    color: #fff;
+        color: #fff;
         padding: 0;
         border: 0;
         font-size: 18px;
         outline: none;
         background-color: transparent;
-        color: #FFFFFF;
+        color: #ffffff;
         width: calc(100% - 187px);
         text-align: right;
     }

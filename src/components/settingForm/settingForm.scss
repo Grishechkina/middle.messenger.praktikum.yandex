@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .setting-form {
     display: flex;
@@ -10,10 +10,10 @@
         flex-direction: column;
         gap: 20px;
     }
-    &__btns{
+    &__btns {
         margin-top: 50px;
         display: flex;
-		flex-direction: column;
+        flex-direction: column;
         width: 100%;
         max-width: 280px;
         align-self: center;

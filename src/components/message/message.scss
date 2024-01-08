@@ -1,4 +1,4 @@
-@use '../../styles/common' as var;
+@use "../../styles/common" as var;
 
 .message {
     padding: 15px;
@@ -37,8 +37,6 @@
             background-repeat: no-repeat;
         }
     }
-
-    
 
     &_not-my {
         align-self: flex-start;
