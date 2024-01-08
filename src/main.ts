@@ -30,16 +30,51 @@ const pages = {
 		formTitle: 'Привет, незнакомец',
 		navigateTo: 'login',
 	}],
-	error: [Pages.ErrorPage, {
+	error500: [Pages.ErrorPage, {
 		title: '500',
 		subtitle: '(Райан уже выехал на разборки)',
 		linkTitle: 'Назад к чатам',
-		navigateTo: 'registration'
+		navigateTo: 'chats'
+	}],
+	error404: [Pages.ErrorPage, {
+		title: '404',
+		subtitle: 'Страница не найдена',
+		linkTitle: 'Назад к чатам',
+		navigateTo: 'chats'
 	}],
 	chats: [Pages.ChatsPage],
-	// profile: [Pages.Profile],
-	// profileChangeData: [Pages.Profile],
-	// profileChangePassword: [Pages.Profile],
+	profile: [Pages.ProfilePage, {
+		fields: [
+			{ labelText: 'Почта', type: 'email', name: 'email', value: 'blade_runner2049@yandex.ru' },
+			{ labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside' },
+			{ labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван' },
+			{ labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг' },
+			{ labelText: 'Имя в чате', type: 'text', name: 'nickname', value: 'DeadOutside' },
+			{ labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66' },
+		],
+		disabled: true
+	}],
+	profileChangeData: [Pages.ProfilePage, {
+		fields: [
+			{ labelText: 'Почта', type: 'email', name: 'email', value: 'blade_runner2049@yandex.ru' },
+			{ labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside' },
+			{ labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван' },
+			{ labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг' },
+			{ labelText: 'Имя в чате', type: 'text', name: 'nickname', value: 'DeadOutside' },
+			{ labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66' },
+		],
+		submitTitle: 'Сохранить',
+		disabled: false
+	}],
+	profileChangePassword: [Pages.ProfilePage, {
+		fields: [
+			{ labelText: 'Старый пароль', type: 'password', name: 'oldPassword' },
+			{ labelText: 'Новый пароль', type: 'password', name: 'newPassword' },
+			{ labelText: 'Повторите новый пароль', type: 'password', name: 'passwordAgain' },
+		],
+		submitTitle: 'Сохранить',
+		disabled: false
+	}],
 };
 
 Object.entries(Components).forEach(([name, component]) => {
@@ -53,7 +88,7 @@ function navigate(page: string) {
 	container.innerHTML = Handlebars.compile(source)(context);
 }
 
-document.addEventListener('DOMContentLoaded', () => navigate('chats'));
+// document.addEventListener('DOMContentLoaded', () => navigate('profile'));
 
 document.addEventListener('click', (e) => {
 	// @ts-ignore

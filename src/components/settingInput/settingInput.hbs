@@ -1,0 +1,7 @@
+<label class="setting-input">
+    {{labelText}}
+    <input class="setting-input__input" {{#if disabled}} disabled {{/if}} type={{type}} name={{name}} {{#if value}} value={{value}} {{/if}}>
+    {{#if error}}
+        <span class="setting-input__input-error">{{error}}</span>
+    {{/if}}
+</label>

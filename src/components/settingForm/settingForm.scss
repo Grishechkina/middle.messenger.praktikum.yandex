@@ -1,0 +1,21 @@
+@use '../../styles/common' as var;
+
+.setting-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 510px;
+    &__fields-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__btns{
+        margin-top: 50px;
+        display: flex;
+		flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+        align-self: center;
+    }
+}
