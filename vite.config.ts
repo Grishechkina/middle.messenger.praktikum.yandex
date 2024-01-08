@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 
 export default defineConfig({
@@ -9,4 +9,4 @@ export default defineConfig({
 		//@ts-ignore
 		handlebars()
 	]
-})
+});

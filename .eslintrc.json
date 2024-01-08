@@ -18,6 +18,8 @@
     "rules": {
         "@typescript-eslint/ban-ts-comment": "off",
         "indent": ["error", "tab"],
-        "quotes": [2, "single", { "avoidEscape": true }]
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "eol-last": ["error", "always"],
+        "semi": [2, "always"]
     }
 }

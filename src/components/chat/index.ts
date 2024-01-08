@@ -1,5 +1,5 @@
-import './chat.scss'
-import Handlebars from 'handlebars'
+import './chat.scss';
+import Handlebars from 'handlebars';
 
 export { default as Chat } from './chat.hbs?raw';
 
@@ -56,5 +56,5 @@ Handlebars.registerHelper('messages', () => {
 				Feels so real, my Ken-ergy
 			`
 		}
-	]
-})
+	];
+});
