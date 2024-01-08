@@ -6,7 +6,7 @@ export default defineConfig({
 		outDir: 'dist'
 	},
 	plugins: [
-		//@ts-ignore
+		//@ts-expect-error
 		handlebars()
 	]
 });
