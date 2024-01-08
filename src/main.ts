@@ -82,7 +82,7 @@ Object.entries(Components).forEach(([name, component]) => {
 });
 
 function navigate(page: string) {
-	// @ts-expect-error
+	// @ts-expect-error: different Types after updates. but still can be compared
 	const [source, context] = pages[page];
 	const container = document.getElementById('app')!;
 	container.innerHTML = Handlebars.compile(source)(context);
@@ -91,7 +91,7 @@ function navigate(page: string) {
 // document.addEventListener('DOMContentLoaded', () => navigate('profile'));
 
 document.addEventListener('click', (e) => {
-	// @ts-expect-error
+	// @ts-expect-error: different Types after updates. but still can be compared
 	const page = e.target.getAttribute('navigateTo');
 	if (page) {
 		navigate(page);

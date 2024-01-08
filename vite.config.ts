@@ -6,7 +6,7 @@ export default defineConfig({
 		outDir: 'dist'
 	},
 	plugins: [
-		//@ts-expect-error
+		//@ts-expect-error: different Types after updates. but still can be compared
 		handlebars()
 	]
 });
