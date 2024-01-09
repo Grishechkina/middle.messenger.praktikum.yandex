@@ -1,0 +1,13 @@
+<form class="setting-form">
+    <div class="setting-form__fields-container">
+        {{#each fields}}
+            {{> SettingInput disabled=../disabled}}
+        {{/each}}
+    </div>
+
+    {{#if submitTitle}}
+        <span class="setting-form__btns">
+            {{> Button label=submitTitle type="button" navigateTo="chats"}}
+        </span>
+    {{/if}}
+</form>

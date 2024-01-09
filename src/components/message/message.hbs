@@ -1,0 +1,12 @@
+<div class="message {{#if my}}message_my{{else}}message_not-my{{/if}}">
+    <p class="message__text">{{text}}</p>
+    {{#if img}}
+    <img class="message_img" src={{img}}>
+    {{/if}}
+    <p class="{{#if my}}message__time-my{{else}}message__time-not-my{{/if}} {{#if img}}message__time-img{{/if}}">
+    {{#if read}}
+        <span class="{{#if my}}message__time-my_read{{else}}message__time-not-my_read{{/if}}"></span>
+    {{/if}}
+    {{time}}
+    </p>
+</div>

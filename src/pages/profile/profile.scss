@@ -1,0 +1,64 @@
+@use "../../styles/common" as var;
+
+.profile-page {
+    background: var.$gradient;
+    width: 100vw;
+    height: 100vh;
+
+    &__back-btn {
+        margin: 20px 20px;
+        background-color: transparent;
+        background-image: url(../../assets/img/bakBtn.png);
+        border: 0;
+        width: 28px;
+        height: 28px;
+    }
+
+    &__container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__avatar {
+        width: 130px;
+        height: 130px;
+    }
+
+    &__name {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 510px;
+        margin-top: 60px;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    &__btn {
+        background: none;
+        outline: none;
+        color: var.$light-green;
+        border: none;
+        width: 150px;
+        padding: 0;
+        text-align: start;
+    }
+
+    &__link {
+        color: var.$accent-color;
+    }
+
+    &__horizont-line {
+        border-bottom: 1px solid var.$light-blue;
+        width: 100%;
+        max-width: 510px;
+        padding-bottom: 10px;
+    }
+}

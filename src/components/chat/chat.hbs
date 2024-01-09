@@ -1,0 +1,25 @@
+<div class="chat">
+    <div class="chat__header">
+        <div class="interlocutor">
+            <img class="interlocutor__avatar avatar"
+                src="https://cdn.justjared.com/wp-content/uploads/headlines/2023/07/ryan-gosling-push-song-barbie-tea.jpg">
+            <p class="interlocutor__name">
+                Ken-1
+            </p>
+        </div>
+        <button class="more-action-btn btn"></button>
+    </div>
+    <div class="chat__body">
+        <div class="chat__messages">
+            {{#each (messages)}}
+            {{> Message}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="chat__send-message">
+        <button class="chat__attachments-btn btn"></button>
+        <input class="message-input" type="text" name="message" placeholder="Сообщение">
+        <button class="chat__send-btn"></button>
+    </div>
+</div>

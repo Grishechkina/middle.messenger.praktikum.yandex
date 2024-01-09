@@ -1,0 +1,23 @@
+<div class="profile-page">
+    <button class="profile-page__back-btn btn" navigateTo="chats"></button>
+
+    <div class="profile-page__container">
+        <img class="avatar profile-page__avatar "
+            src="https://gameguru.ru/media/cache/45/9c/459c81dc249d02cbf7c2030c8eb8f62a.jpg">
+        <p class="profile-page__name">
+            Иван
+        </p>
+        {{> SettingForm}}
+        {{#if disabled}}
+            <div class="profile-page__btns">
+                <span class="profile-page__horizont-line">
+                    <button class="profile-page__btn btn" navigateTo="profileChangeData">Изменить данные</button>
+                </span>
+                <span class="profile-page__horizont-line">
+                    <button class="profile-page__btn btn" navigateTo="profileChangePassword">Изменить пароль</button>
+                </span>
+                <a href="#" navigateTo="login" class="link profile-page__link">Выйти</a>
+            </div>
+        {{/if}}
+    </div>
+</div>

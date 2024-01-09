@@ -1,0 +1,39 @@
+@use "../../styles/common" as var;
+
+.login-page {
+    min-height: 100vh;
+    background: no-repeat url(../../assets/img/LoginBackground.png);
+    background-size: cover;
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.login-form {
+    box-sizing: border-box;
+    background: var.$form-background-color;
+    width: 100%;
+    max-width: 370px;
+    min-height: 450px;
+    max-height: 755px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 10px var.$form-background-color;
+
+    &__title {
+        color: var.$accent-color;
+        margin: 0 0 16px;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .login-page {
+        padding-left: 0;
+    }
+
+    .login-form {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+<div class="chats-page">
+	<section class="chats-page__left">
+		<a class="link chats-page__link" href="#" navigateTo="profile">Профиль &gt;</a>
+		{{> Button label='Поиск'}}
+		{{#each (chats)}}
+			{{> ChatInfo }}
+		{{/each}}
+	</section>
+	<section class="chats-page__right">
+		{{> Chat }}
+	</section>
+</div>

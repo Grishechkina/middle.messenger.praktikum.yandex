@@ -1,0 +1,30 @@
+@use "../../styles/common" as var;
+
+.setting-input {
+    border-bottom: 1px solid var.$light-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    color: var.$grey;
+
+    &__input {
+        color: #fff;
+        padding: 0;
+        border: 0;
+        font-size: 18px;
+        outline: none;
+        background-color: transparent;
+        color: #ffffff;
+        width: calc(100% - 187px);
+        text-align: right;
+    }
+
+    &__input-error {
+        color: red;
+        display: block;
+        font-size: 14px;
+        line-height: 12px;
+        margin-top: 8px;
+    }
+}
