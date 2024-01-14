@@ -34,37 +34,61 @@ const pages = {
 		title: '500',
 		subtitle: '(Райан уже выехал на разборки)',
 		linkTitle: 'Назад к чатам',
-		navigateTo: 'chats'
+		navigateTo: 'chats',
 	}],
 	error404: [Pages.ErrorPage, {
 		title: '404',
 		subtitle: 'Страница не найдена',
 		linkTitle: 'Назад к чатам',
-		navigateTo: 'chats'
+		navigateTo: 'chats',
 	}],
 	chats: [Pages.ChatsPage],
 	profile: [Pages.ProfilePage, {
 		fields: [
-			{ labelText: 'Почта', type: 'email', name: 'email', value: 'blade_runner2049@yandex.ru' },
-			{ labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside' },
-			{ labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван' },
-			{ labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг' },
-			{ labelText: 'Имя в чате', type: 'text', name: 'display_name', value: 'DeadOutside' },
-			{ labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66' },
+			{
+				labelText: 'Почта', type: 'email', name: 'email', value: 'blade_runner2049@yandex.ru',
+			},
+			{
+				labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside',
+			},
+			{
+				labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван',
+			},
+			{
+				labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг',
+			},
+			{
+				labelText: 'Имя в чате', type: 'text', name: 'display_name', value: 'DeadOutside',
+			},
+			{
+				labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66',
+			},
 		],
-		disabled: true
+		disabled: true,
 	}],
 	profileChangeData: [Pages.ProfilePage, {
 		fields: [
-			{ labelText: 'Почта', type: 'email', name: 'email', value: 'blade_runner2049@yandex.ru' },
-			{ labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside' },
-			{ labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван' },
-			{ labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг' },
-			{ labelText: 'Имя в чате', type: 'text', name: 'display_name', value: 'DeadOutside' },
-			{ labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66' },
+			{
+				labelText: 'Почта', type: 'email', name: 'email', value: 'blade_runner2049@yandex.ru',
+			},
+			{
+				labelText: 'Логин', type: 'text', name: 'login', value: 'DeadInside',
+			},
+			{
+				labelText: 'Имя', type: 'text', name: 'first_name', value: 'Иван',
+			},
+			{
+				labelText: 'Фамилия', type: 'text', name: 'second_name', value: 'Бослинг',
+			},
+			{
+				labelText: 'Имя в чате', type: 'text', name: 'display_name', value: 'DeadOutside',
+			},
+			{
+				labelText: 'Телефон', type: 'text', name: 'phone', value: '+7(666)-666-66-66',
+			},
 		],
 		submitTitle: 'Сохранить',
-		disabled: false
+		disabled: false,
 	}],
 	profileChangePassword: [Pages.ProfilePage, {
 		fields: [
@@ -73,7 +97,7 @@ const pages = {
 			{ labelText: 'Повторите новый пароль', type: 'password', name: 'passwordAgain' },
 		],
 		submitTitle: 'Сохранить',
-		disabled: false
+		disabled: false,
 	}],
 };
 

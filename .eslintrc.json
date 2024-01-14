@@ -5,7 +5,8 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "airbnb-base"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -15,11 +16,75 @@
     "plugins": [
         "@typescript-eslint"
     ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "src"
+                ],
+                "extensions": [
+                    ".js",
+                    ".ts",
+                    ".d.ts",
+                    ".tsx"
+                ]
+            }
+        }
+    },
     "rules": {
-        // "@typescript-eslint/ban-ts-comment": "off",
-        "indent": ["error", "tab"],
-        "quotes": [2, "single", { "avoidEscape": true }],
-        "eol-last": ["error", "always"],
-        "semi": [2, "always"]
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-tabs": [
+            "error",
+            {
+                "allowIndentationTabs": true
+            }
+        ],
+        "max-len": [
+            2,
+            140
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "import/no-unresolved": [
+            2,
+            {
+                "ignore": [
+                    "\\?raw$"
+                ]
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
     }
 }

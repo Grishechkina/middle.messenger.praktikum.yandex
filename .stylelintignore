@@ -1,0 +1,11 @@
+*.tsx
+*.jsx
+*.ts
+*.js
+*.md
+*.svg
+*.png
+*.hbs
+/node_modules
+/dist
+normalize.css
