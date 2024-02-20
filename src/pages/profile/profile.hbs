@@ -7,8 +7,8 @@
         <p class="profile-page__name">
             Иван
         </p>
-        {{> SettingForm}}
-        {{#if disabled}}
+        {{{ SettingForm config=formConfig}}}
+        {{#if showChangeButton}}
             <div class="profile-page__btns">
                 <span class="profile-page__horizont-line">
                     <button class="profile-page__btn btn" navigateTo="profileChangeData">Изменить данные</button>

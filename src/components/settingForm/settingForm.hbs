@@ -1,13 +1,13 @@
 <form class="setting-form">
     <div class="setting-form__fields-container">
-        {{#each fields}}
-            {{> SettingInput disabled=../disabled}}
+        {{#each config.fields}}
+            {{{ SettingInput disabled=disabled labelText=labelText type=type name=name value=value}}}
         {{/each}}
     </div>
 
-    {{#if submitTitle}}
+    {{#if config.submitTitle}}
         <span class="setting-form__btns">
-            {{> Button label=submitTitle type="button" navigateTo="chats"}}
+            {{{ Button label=config.submitTitle type="button" navigateTo="chats"}}}
         </span>
     {{/if}}
 </form>

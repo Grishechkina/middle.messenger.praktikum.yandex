@@ -1,12 +1,12 @@
 <form class="form">
     <div class="form__fields-container">
-        {{#each fields}}
-            {{> Input labelText=labelText type=type name=name}}
+        {{#each config.fields}}
+            {{{ Input labelText=labelText type=type name=name}}}
         {{/each}}
     </div>
 
     <div class="form__btns">
-        {{> Button label=submitTitle type="button" navigateTo="chats"}}
-        <a class="link form__link" href="#" navigateTo={{navigateTo}}>{{linkTitle}}</a>
+        {{{ Button label=config.submitTitle type="button" navigateTo="chats"}}}
+        <a class="link form__link" href="#" navigateTo={{config.navigateTo}}>{{config.linkTitle}}</a>
     </div>
 </form>
